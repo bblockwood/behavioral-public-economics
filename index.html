@@ -3,86 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Behavioral Public Economics Boot Camp</title>
+  <title>Behavioral Public Economics</title>
   <style>
+    /* Base styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
+      padding: 0 20px 60px;
+      line-height: 1.65;
+      background-color: #fcfcfd;
       color: #2c3e50;
     }
+
+    h1, h2 {
+      color: #1a2a40;
+      margin-bottom: 0.3em;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 0.3em;
+    }
+
+    h2 {
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.2em;
+      margin-top: 2em;
+    }
+
     a {
       color: #2980b9;
       text-decoration: none;
+      font-weight: 600;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     ul {
-      padding-left: 20px;
+      padding-left: 1.3em;
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+    }
+
+    ul li {
+      margin-bottom: 0.6em;
+    }
+
+    /* Navigation bar */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+      display: flex;
+      gap: 25px;
+      background-color: #e3eaf2;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    }
+
+    nav ul li a {
+      color: #1a2a40;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #3a85f5;
+    }
+
+    /* Section cards */
+    .section-box {
+      background: white;
+      box-shadow: 0 2px 7px rgb(0 0 0 / 0.05);
+      border-radius: 8px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .section-box:hover {
+      box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      body {
+        padding: 0 15px 40px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .section-box {
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bootcamp-2025.html">Boot Camp 2025</a></li>
+      <li><a href="mini-course.html">Mini-Course</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>Behavioral Public Economics Boot Camp</h1>
+    <h1>Behavioral Public Economics</h1>
   </header>
 
-  <section aria-labelledby="about">
+  <section class="section-box">
     <p>
-      Welcome to the website for the PhD-level <strong>Behavioral Public Economics Boot Camp!</strong> This site provides information about the upcoming boot camp—hosted at <strong>Stanford University, August 21–23, 2025</strong>—and resources from previous iterations.
+      Welcome! This site serves as a central hub for the PhD-level <strong>Behavioral Public Economics Boot Camp</strong>—including information about the upcoming 2025 one hosted at <strong>Stanford University, August 21–23, 2025</strong>—and for the <strong>Mini-Course in Behavioral Public Economics</strong>, which collects materials from previous boot camps such as lecture slides, problem sets, and readings.
     </p>
-
     <p>
-      The boot camp is designed to equip graduate students in economics with a deep understanding of cutting-edge research at the intersection of Behavioral and Public Economics, and its connections to fields like Health, Labor, Household Finance, Development, and Energy Economics.
+      Use the navigation bar above to explore each section:
     </p>
-
-    <p>
-        This year’s organizers are 
-        <strong><a href="https://bernheim.people.stanford.edu/" target="_blank" rel="noopener noreferrer">Doug Bernheim</a></strong> (Stanford), 
-        <strong><a href="https://benlockwood.com" target="_blank" rel="noopener noreferrer">Ben Lockwood</a></strong> (Wharton, University of Pennsylvania), and 
-        <strong><a href="https://www.dmitrytaubinsky.com/" target="_blank" rel="noopener noreferrer">Dmitry Taubinsky</a></strong> (UC Berkeley), 
-        with generous support from the Alfred P. Sloan Foundation and the Pension Research Council.
-    </p>
-
-    <p>
-        The program will feature lectures by the organizers and invited talks from leading scholars, including 
-        <strong><a href="https://economics.stanford.edu/people/matthew-gentzkow" target="_blank" rel="noopener noreferrer">Matt Gentzkow</a></strong>, 
-        <strong><a href="https://www.wiwi.uni-bonn.de/koszegi/" target="_blank" rel="noopener noreferrer">Botond Koszegi</a></strong>, 
-        <strong><a href="https://bepp.wharton.upenn.edu/profile/mitchelo/" target="_blank" rel="noopener noreferrer">Olivia Mitchell</a></strong>, and 
-        <strong><a href="https://users.nber.org/~notom/" target="_blank" rel="noopener noreferrer">Matt Notowidigdo</a></strong>. 
-        The keynote address will be delivered by <strong><a href="https://www.daveguarino.com/" target="_blank" rel="noopener noreferrer">Dave Guarino</a></strong>.
-    </p>
+    <ul>
+      <li><strong><a href="bootcamp-2025.html">Boot Camp 2025</a></strong> — Access the schedule, speaker details, and all other information for the upcoming 2025 in-person boot camp.</li>
+      <li><strong><a href="mini-course.html">Mini-Course</a></strong> — Download lecture slides, videos, problem sets, and the reading list from the mini-course.</li>
+    </ul>
   </section>
 
-  <section aria-labelledby="schedule">
-    <h2 id="schedule">Schedule</h2>
+  <section class="section-box">
+    <h2>About the Boot Camp</h2>
     <p>
-      View the current draft schedule <a href=https://docs.google.com/document/d/1chIGWctv2E8CL4dM1T-n8CNeQnKYl9wowCon1-EICWE/edit?tab=t.0#heading=h.i147dju7hs27 target="_blank" rel="noopener noreferrer">here</a>.
+      The Behavioral Public Economics Boot Camp is a PhD-level event designed to equip graduate students with a deep understanding of behavioral approaches to public economics. It draws connections across subfields like health, labor, household finance, development, and energy.
     </p>
+    <p>
+      The 2025 Boot Camp will be held at <strong>Stanford University, August 21–23, 2025</strong>, featuring lectures and discussions led by Doug Bernheim, Ben Lockwood, Dmitry Taubinsky, and invited scholars.
+    </p>
+    <p><a href="bootcamp-2025.html">View full Boot Camp details →</a></p>
   </section>
 
-<section aria-labelledby="resources">
-  <h2 id="resources">Resources</h2>
-  <ul>
-    <li>
-      Previous lecture videos from the 
-      <a href="https://www.nber.org/conferences/behavioral-public-economics-bootcamp-spring-2022" target="_blank" rel="noopener noreferrer">2022</a> and 
-      <a href="https://www.nber.org/conferences/behavioral-public-economics-bootcamp-fall-2023" target="_blank" rel="noopener noreferrer">2023</a> boot camps
-    </li>
-    <li>
-      <a href="https://sites.google.com/view/behavioralpublic/home" target="_blank" rel="noopener noreferrer">
-        Mini-course in Behavioral Public Economics
-      </a> with previous lecture slides and problem sets
-    </li>
-  </ul>
-</section>
+  <section class="section-box">
+    <h2>About the Mini-Course</h2>
+    <p>
+      The mini-course in Behavioral Public Economics is a remote-learning resource for those interested in the subject. It includes a brief overview of the topic(s), recorded lectures, problem sets, native source files, and a reading list. These resources come from previous iterations of the boot camp and are designed to be accessible to a wide audience.
+    </p>
+    <p><a href="mini-course.html">Explore the Mini-Course materials →</a></p>
+  </section>
+
 </body>
 </html>

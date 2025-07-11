@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini-Course | Behavioral Public Economics Boot Camp</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      line-height: 1.65;
+      background-color: #fcfcfd;
+      color: #2c3e50;
+    }
+    h1, h2, h3 {
+      color: #1a2a40;
+      margin-bottom: 0.3em;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 0.3em;
+    }
+    h2 {
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.2em;
+      margin-top: 2em;
+    }
+    h3 {
+      margin-top: 1.5em;
+      font-weight: 600;
+      color: #3b4a61;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-top: 0.8em;
+      margin-bottom: 1em;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.3em;
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+    }
+    ul li {
+      margin-bottom: 0.6em;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+      display: flex;
+      gap: 25px;
+      background-color: #e3eaf2;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    }
+    nav ul li a {
+      color: #1a2a40;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    nav ul li a:hover {
+      color: #3a85f5;
+    }
+
+    /* Section card styling */
+    section {
+      background: white;
+      box-shadow: 0 2px 7px rgb(0 0 0 / 0.05);
+      border-radius: 8px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+    }
+
+    /* Details/summary styling for lectures list */
+    details {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px 20px;
+      background-color: #f9fbff;
+      box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.05);
+    }
+    summary {
+      font-weight: 600;
+      font-size: 1.1rem;
+      outline: none;
+      user-select: none;
+    }
+    details[open] summary::after {
+      content: "▲";
+      float: right;
+      font-size: 0.85rem;
+      color: #2980b9;
+    }
+    summary::after {
+      content: "▼";
+      float: right;
+      font-size: 0.85rem;
+      color: #2980b9;
+    }
+    details ul {
+      margin-top: 1em;
+      padding-left: 1.3em;
+    }
+    details li strong {
+      color: #1a2a40;
+    }
+    em {
+      color: #777;
+      font-style: normal;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 0 15px 40px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      section {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bootcamp-2025.html">Boot Camp 2025</a></li>
+      <li><a href="mini-course.html">Mini-Course</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Mini-Course in Behavioral Public Economics</h1>
+  </header>
+
+  <section>
+  <p>
+    This mini-course provides an introduction to Behavioral Public Economics for PhD students in economics. It is based on materials from the 
+    <a href="https://www.nber.org/conferences/behavioral-public-economics-bootcamp-spring-2022" target="_blank">May 2022 NBER Behavioral Public Economics Boot Camp</a>, 
+    organized by 
+    <a href="https://allcott.stanford.edu/" target="_blank">Hunt Allcott</a>, 
+    <a href="https://bernheim.people.stanford.edu/" target="_blank">Doug Bernheim</a>, and 
+    <a href="https://www.dmitrytaubinsky.com/" target="_blank">Dmitry Taubinsky</a>, 
+    with additional lectures from 
+    <a href="https://navaashraf.com/" target="_blank">Nava Ashraf</a>, 
+    <a href="https://rajchetty.com/" target="_blank">Raj Chetty</a>, 
+    <a href="https://laibson.scholars.harvard.edu/" target="_blank">David Laibson</a>, 
+    <a href="https://www.hks.harvard.edu/faculty/elizabeth-linos" target="_blank">Elizabeth Linos</a>, 
+    <a href="https://sites.google.com/bc.edu/michael-grubb/" target="_blank">Michael Grubb</a>, 
+    <a href="https://www.mariosmall.com/" target="_blank">Mario Small</a>, 
+    <a href="https://personal.lse.ac.uk/spinnewi/" target="_blank">Johannes Spinnewijn</a>, and 
+    <a href="https://stantcheva.scholars.harvard.edu/" target="_blank">Stefanie Stantcheva</a>. 
+    The boot camp was funded by the Sloan Foundation.
+  </p>
+</section>
+
+  <section>
+    <h2>Background</h2>
+    <p>
+      In neoclassical economics, the government’s role is typically framed around providing public goods, correcting externalities, and addressing information failures. However, many real-world policies—such as taxes on cigarettes or subsidies for retirement savings—are motivated by concerns that individuals may not always act in their own best interest.
+    </p>
+    <p>
+      Traditional policy evaluation relies on revealed preference assumptions, under which paternalistic interventions reduce welfare. But behavioral economics offers substantial evidence that people sometimes make systematic mistakes. Behavioral public economics extends the tools of public economics to account for these deviations, offering new approaches to welfare analysis and policy design.
+    </p>
+    <p>This mini-course addresses key questions such as:</p>
+    <ul>
+      <li>How can we do welfare analysis if choices do not reveal true preferences?</li>
+      <li>How can we empirically measure consumer biases?</li>
+      <li>What makes a policy socially optimal when individuals may err?</li>
+      <li>Are nudges effective and welfare-enhancing?</li>
+      <li>What are the tradeoffs involved in tax complexity?</li>
+    </ul>
+  </section>
+  
+<section>
+  <h2>Resource</h2>
+
+  </p>
+  <ul>
+    <li><a href="#lectures">Lecture videos, slides, and native files</a> are available.</a></li>
+    <li><a href="mini-course/reading-list/reading-list.pdf">View full reading list</a></li>
+  </ul>
+</section>
+
+  <section id = "problem se">
+    <h2>Problem Sets</h2>
+    <ul>
+      <li><a href="mini-course/problem-sets/theory/theory-problem-set.pdf">Theory Problem Set</a></li>
+      <li><a href="mini-course/problem-sets/empirical/empirical-problem-set.pdf">Empirical Problem Set</a></li>
+    </ul>
+  </section>
+
+  <section id = "lectures">
+    <h2>Lectures</h2>
+    <p>    The lecture materials from the 2022 Behavioral Public Economics Boot Camp are organized below into expandable sections by theme. Each lecture includes downloadable slides and most include a video recording. Click on a topic to view the full list of resources.</p>
+
+    <details>
+      <summary>Fundamentals</summary>
+      <ul>
+        <li><strong>Overview – Hunt Allcott</strong><br>
+          Slide link: <a href="mini-course/lectures/Hunt_Overview.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+        </li>
+        <li><strong>Behavioral Welfare Analysis – Doug Bernheim</strong><br>
+          Slide link: <a href="mini-course/lectures/Bernheim_BehavioralWelfareAnalysis.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-douglas-bernheim-behavioral-welfare-economics" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Sin Taxes and Bans – Hunt Allcott</strong><br>
+          Slide link: <a href="mini-course/lectures/Allcott_SinTaxes.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-hunt-allcott-sin-taxes-and-bans" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Non-standard Policy Instruments – Dmitry Taubinsky</strong><br>
+          Slide link: <a href="mini-course/lectures/Taubinsky_NPIs.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-dmitry-taubinsky-non-standard-policy-instruments" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Non-standard Policy Instruments Part 2 – Doug Bernheim</strong><br>
+          Slide link: <a href="mini-course/lectures/Bernheim_NPIs.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-douglas-bernheim-non-standard-policy-instruments-part-2" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Applications</summary>
+      <ul>
+        <li><strong>Tax Misperceptions – Dmitry Taubinsky</strong><br>
+          Slide link: <a href="mini-course/lectures/Taubinsky_TaxMisperceptions.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-dmitry-taubinsky-tax-misperceptions" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Social Preferences – Stefanie Stantcheva</strong><br>
+          Slide link: <a href="mini-course/lectures/Stantcheva_SocialPreferences.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-stefanie-stantcheva-perceptions-public-policy" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Insurance – Johannes Spinnewijn</strong><br>
+          Slide link: <a href="mini-course/lectures/Spinnewijn_Insurance.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-johannes-spinnewijn-social-insurance-design-behavioral" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Inequality – Raj Chetty</strong><br>
+          Slide link: <a href="mini-course/lectures/Chetty_Inequality.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-raj-chetty-reducing-inequality-using-tools-behavioral" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Household Finance – David Laibson</strong><br>
+          Slide link: <a href="mini-course/lectures/Laibson_HouseholdFinance.pptx" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-david-laibson-household-finance" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Development – Nava Ashraf</strong><br>
+          Slide link: <a href="mini-course/lectures/Ashraf_BehavioralDevelopment.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-nava-ashraf-behavioral-economics-poverty-and-development" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Industrial Organization – Michael Grubb</strong><br>
+          Slide link: <a href="mini-course/lectures/Grubb_IndustrialOrganization.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://www.nber.org/research/videos/2022-behavioral-public-economics-bootcamp-michael-grubb-behavioral-industrial-organization" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Dinner Talks</summary>
+      <ul>
+        <li><strong>A Sociological Perspective on Discrimination – Mario Small</strong><br>
+          Slide link: <a href="mini-course/lectures/Small_Discrimination.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+          Video link: <a href="https://youtu.be/ogw01VeJ1xk?si=LSd4OCljGPnCLsRQ" target="_blank" rel="noopener noreferrer">here</a>
+        </li>
+        <li><strong>Increasing Takeup of the Social Safety Net – Elizabeth Linos</strong><br>
+          Slide link: <a href="mini-course/lectures/Linos_Takeup.pdf" target="_blank" rel="noopener noreferrer">here</a><br>
+        </li>
+      </ul>
+    </details>
+
+    <p>
+      We welcome and encourage other professors to use and modify these materials.<br>
+      Native files (LaTeX/LyX and graphics files) are available 
+      <a href="https://www.dropbox.com/scl/fo/ravtuktsvx39s8z8rnf8p/AIbLhWEr6x2K6Hcn0IpzcyA?rlkey=3y0skbiofbnqg6hc2mifg6hkn&e=1&dl=0" target="_blank" rel="noopener noreferrer">here</a>.<br>
+      A compilation of all the lecture videos from May 2022 above are available
+      <a href="https://www.nber.org/conferences/behavioral-public-economics-bootcamp-spring-2022" target="_blank" rel="noopener noreferrer">here</a>.
+    </p>
+  </section>
+
+
+</body>
+</html>
