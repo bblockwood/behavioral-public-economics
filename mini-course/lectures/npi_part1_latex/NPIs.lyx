@@ -1,0 +1,2397 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+%\usetheme{Malmoe}
+%\useoutertheme[subsection = false]{miniframes} 
+
+
+\usepackage{themes/beamerthememetropolis_gslab}
+
+\PassOptionsToPackage{no-math}{fontspec}
+\usepackage{graphicx} 
+\usepackage{hyperref} 
+\usepackage{multirow} 
+\usepackage{hyperref} 
+\usepackage{centernot} 
+\usepackage{pdfpages} 
+\newtheorem{proposition}{Proposition} 
+\setbeamerfont{child}{size=\small} 
+\setbeamertemplate{footline}[default] 
+\setbeamersize{text margin left=1.5em,text margin right=1em}
+\pdfmapfile{+sansmathaccent.map}
+
+
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+
+\setcounter{MaxMatrixCols}{10}
+
+\usepackage{fancyhdr}
+ 
+
+\definecolor{cardinalred}{rgb}{0.549, 0.082, 0.082}
+\setbeamercolor{progress bar}{ fg = cardinalred }
+\setbeamercolor{title separator}{ fg = cardinalred}
+\setbeamercolor{progress bar in head}{ fg = cardinalred}
+\setbeamercolor{progress bar in foot}{ fg = cardinalred}
+\setbeamercolor{progress bar in section page}{ fg = cardinalred }
+
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\logit}{logit}
+\DeclareMathOperator{\I}{I}
+
+
+
+
+\usepackage{graphicx}
+\setbeamercovered{invisible}
+\end_preamble
+\options t, aspectratio=169
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "helvet" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Non-Financial Policy Instruments
+\end_layout
+
+\begin_layout Author
+
+\size small
+Dmitry Taubinsky
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Non-financial policy instruments (NPIs) 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/NudgeExamples.pdf
+	lyxscale 25
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+NPIs
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What people seem to mean by 
+\begin_inset Quotes eld
+\end_inset
+
+nudges
+\begin_inset Quotes erd
+\end_inset
+
+:
+ policy instruments designed to affect choice without affecting opportunities
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Will argue that few levers plausibly satisfy this definition,
+ thus NPI is a more useful term
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Examples:
+ information provision,
+ social comparisons,
+ reminders,
+ framing,
+ defaults,
+ commitment opportunities,
+ advertising,
+ ...
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Libertarian paternalism
+\begin_inset Quotes erd
+\end_inset
+
+ (Thaler and Sunstein 2003),
+ 
+\begin_inset Quotes eld
+\end_inset
+
+asymmetric paternalism
+\begin_inset Quotes erd
+\end_inset
+
+ (Camerer et al.
+ 2003)
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Increasingly used to encourage privately or socially beneficial behaviors:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Retirement savings,
+ smoking cessation,
+ environmental conservation,
+ charitable giving,
+ healthful eating,
+ exercise,
+ organ donation,
+ ...
+\end_layout
+
+\begin_layout Itemize
+Government 
+\begin_inset Quotes eld
+\end_inset
+
+nudge units
+\begin_inset Quotes erd
+\end_inset
+
+ (UK,
+ US,
+ DC,
+ Australia,
+ ...)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The economic approach to NPIs
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+With our PF hats on:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Recall that the welfare effect of a tax reform is
+\begin_inset Formula 
+\begin{align*}
+\frac{dW_{\theta}}{dt}= & {\color{blue}\underbrace{-\gamma_{\theta}(t)\frac{dx_{\theta}}{dt}}_{\text{Bias correction}}+{\color{olive}\underbrace{t\frac{dx_{\theta}}{dt}}_{\text{Fiscal externality}}}+{\color{red}\underbrace{x_{\theta}(1-g_{\theta})}_{\text{Mechanical effect}}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Generalization to arbitrary intervention of 
+\begin_inset Quotes eld
+\end_inset
+
+size
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dW_{\theta}}{d\sigma}={\color{blue}\underbrace{-\gamma_{\theta}(\sigma)\frac{dx_{\theta}}{d\sigma}}_{\text{Bias correction}}}+{\color{olive}\underbrace{\left(t+\frac{\partial R}{\partial x}\right)\frac{dx_{\theta}}{d\sigma}}_{\text{Fiscal externality}}}+\underbrace{{\color{red}\frac{\partial R}{\partial\sigma}-a'_{\theta}(\sigma)g_{\theta}}}_{\text{\text{{\color{red}Mechanical\ effect}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size footnotesize
+\begin_inset Formula $R$
+\end_inset
+
+:
+ Government revenue given 
+\begin_inset Formula $\sigma$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a_{\theta}$
+\end_inset
+
+:
+ aversiveness of intervention,
+ 
+\begin_inset Formula $g_{\theta}:$
+\end_inset
+
+ welfare weight
+\end_layout
+
+\begin_layout Standard
+Key economic quantities:
+\end_layout
+
+\begin_layout Itemize
+Covariance of treatment effects and bias
+\end_layout
+
+\begin_layout Itemize
+Consumers' aversiveness to (or enjoyment from) intervention
+\end_layout
+
+\begin_layout Itemize
+Fiscal externalities and costs of implementation 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+More specified set-up
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Set up:
+\end_layout
+
+\begin_layout Itemize
+Consumers have unit demand for a good 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ and derive utility 
+\begin_inset Formula $v_{\theta}$
+\end_inset
+
+ from 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bias 
+\begin_inset Formula $\gamma_{\theta}$
+\end_inset
+
+ and treatment effects of NPI given by 
+\begin_inset Formula $\tau_{\theta}$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Purchase the good if 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $v_{\theta}+\gamma_{\theta}+\tau_{\theta}\geq p$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+and derive utility 
+\begin_inset Formula $v-p$
+\end_inset
+
+ from the purchase
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Producers have cost function 
+\begin_inset Formula $c(q)$
+\end_inset
+
+ to produce 
+\begin_inset Formula $q$
+\end_inset
+
+ units of good 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $c'(q)$
+\end_inset
+
+ is assumed positive and 
+\begin_inset Formula $c''(q)$
+\end_inset
+
+ is assumed weakly positive
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ignore redistributive concerns,
+ for simplicity
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Welfare effects of NPIs in this set-up (Allcott,
+ Morrison,
+ Taubinsky 2022)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Intervention with treatment effects 
+\begin_inset Formula $\tau_{\theta}$
+\end_inset
+
+,
+ s.t.
+ consumers purchase iff 
+\begin_inset Formula $v_{\theta}+\gamma_{\theta}+\tau_{\theta}\geq p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{\text{No tax case: }}\Delta W\approx\frac{1}{2}\left(\mathbb{E}\left[(\gamma_{\theta}+\tau_{\theta})^{2}|p\right]-\mathbb{E}[\gamma^{2}|p]\right)D_{p}'-\mathbb{E}[a_{\theta}]
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{W/ optimal sin tax\text{: }}\Delta W\approx\frac{1}{2}\left(Var\left[(\gamma_{\theta}+\tau_{\theta})|p,\sigma\right]-Var[\gamma|p,\sigma]\right)D_{p}-\mathbb{E}[a_{\theta}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Good
+\begin_inset Quotes erd
+\end_inset
+
+ behavior change is not about 
+\begin_inset Formula $\mathbb{E}[\tau_{\theta}]$
+\end_inset
+
+;
+ it's about decreasing...
+ 
+\end_layout
+
+\begin_layout Enumerate
+...the 
+\emph on
+second
+\emph default
+ moment of 
+\begin_inset Quotes eld
+\end_inset
+
+post-intervention bias,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\gamma_{\theta}+\tau_{\theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+W/ optimal sin tax,
+ 
+\begin_inset Formula $\mathbb{E}[\tau_{\theta}]$
+\end_inset
+
+ is completely unrelated to 
+\begin_inset Formula $\Delta W$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+...aversiveness of the intervention,
+ 
+\begin_inset Formula $\mathbb{E}[a_{\theta}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consumers purchasing sugary drinks either have
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{\theta}>>0$
+\end_inset
+
+ (oblivious about health costs)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma_{\theta}\lessapprox0$
+\end_inset
+
+ (obsessive healthy eaters)
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Treatment effects of sugar warning label:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\tau_{\theta}=0$
+\end_inset
+
+ when 
+\begin_inset Formula $\gamma_{\theta}>>0$
+\end_inset
+
+ (oblivious people ignore)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tau_{\theta}>0$
+\end_inset
+
+ when 
+\begin_inset Formula $\gamma_{\theta}\leq0$
+\end_inset
+
+ (healthy eaters are highly sensitized)
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Label decreases welfare,
+ despite decreasing sugary drinks consumption
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Homogeneous bias 
+\begin_inset Formula $\gamma_{\theta}\equiv\gamma$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Intervention makes 
+\begin_inset Formula $\gamma_{\theta}=0$
+\end_inset
+
+ for 50% of consumers
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Unambiguous improvement in 
+\begin_inset Quotes eld
+\end_inset
+
+decision quality
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+With optimally set taxes,
+ this intervention is welfare-decreasing
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Pre-intervention,
+ tax 
+\begin_inset Formula $t=\gamma$
+\end_inset
+
+ achieves the first best
+\end_layout
+
+\begin_layout Itemize
+Post intervention,
+ no tax can achieve the first best because of heterogeneity
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\tau_{\theta}=-\gamma_{\theta}+\varepsilon$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $\mathbb{E}[\varepsilon]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So the intervention is well-targeted in an 
+\begin_inset Quotes eld
+\end_inset
+
+average
+\begin_inset Quotes erd
+\end_inset
+
+ sense
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Intervention is welfare-decreasing (with and without taxes) when 
+\begin_inset Formula $Var[\varepsilon]$
+\end_inset
+
+ is sufficiently high
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intuition:
+ Intervention generates more 
+\begin_inset Quotes eld
+\end_inset
+
+noise
+\begin_inset Quotes erd
+\end_inset
+
+ in people's decisions than the pre-existing biases did
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Generalization:
+ Incomplete pass-through
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Imperfectly competitive markets with elastic supply
+\end_layout
+
+\begin_layout Itemize
+Pass-through of producer taxes to prices,
+ 
+\begin_inset Formula $\rho$
+\end_inset
+
+,
+ is key additional stat
+\end_layout
+
+\begin_layout Itemize
+Impact of NPI on prices is 
+\begin_inset Formula $\approx\mathbb{E}[\tau_{\theta}](1-\rho)D_{p}'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I.
+ Without taxation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta W\approx\frac{1}{2}\rho\left(\mathbb{E}[(\tau_{\theta}+\gamma_{\theta})^{2}|p]-\mathbb{E}[\gamma_{\theta}^{2}|p]\right)D_{p}'+(1-\rho)\frac{1}{2}\left(Var[\tau_{\theta}+\gamma_{\theta}|p]-Var[\gamma_{\theta}|p]\right)\cdot D_{p}'-\mathbb{E}[a_{\theta}]
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+II.
+ With taxation (set by the social planner):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta W\approx\frac{1}{2}\left(Var[\tau_{\theta}+\gamma_{\theta}|p]-Var[\gamma_{\theta}|p]\right)\cdot D_{p}'-\mathbb{E}[a_{\theta}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fixed supply of the good,
+ so 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Homogeneous bias 
+\begin_inset Formula $\gamma_{\theta}\equiv\gamma$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Intervention makes 
+\begin_inset Formula $\gamma_{\theta}=0$
+\end_inset
+
+ for some of the consumers
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Unambiguous improvement in 
+\begin_inset Quotes eld
+\end_inset
+
+decision quality
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+With and without taxes,
+ this intervention is welfare-decreasing
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Pre-intervention,
+ we have first-best allocation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+allocation is invariant in the degree of homogeneous bias
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Post intervention,
+ we have inefficiencies due to heterogeneity in bias
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Measuring targeting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Allcott,
+ Morrison,
+ and Taubinsky (2022):
+ Measuring targeting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Measure targeting of fuel economy and health information provision
+\end_layout
+
+\begin_layout Itemize
+Welfare analysis given covariances
+\end_layout
+
+\begin_layout Itemize
+Proxy for bias with nutrition knowledge and self-control questions
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Allcott, Morrison, and Taubinsky 2022 - SSBExperimentalDesign.pdf
+	lyxscale 35
+	scale 65
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/DisclosureNudges.pdf
+	lyxscale 35
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Nutrition label treatment
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/SSB_EndlineMPL_nutrition.PNG
+	lyxscale 35
+	scale 26
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Nutrition label treatment
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/SSB_EndlineMPL_wl.PNG
+	lyxscale 35
+	scale 26
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Nutrition label treatment
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/SSB_EndlineMPL_gwl.PNG
+	lyxscale 35
+	scale 26
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Labels change behavior
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Allcott, Morrison, and Taubinsky SSB ATEs.pdf
+	scale 72
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+But are not well-targeted
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Overvaluation above and below median bias spike plot_v2.png
+	lyxscale 80
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Welfare effects
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/welfare_spike_plot_dp.png
+	lyxscale 80
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\size scriptsize
+Note:
+ Estimates are the sufficient statistics multipled by 
+\begin_inset Formula $D_{p}$
+\end_inset
+
+,
+ or the slope of the demand near the market price.
+ Percentile-based bootstrapped confidence intervals from 1000 replications,
+ clustered at the subject level,
+ are also reported.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fuel economy labels
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Overvaluation above and below median spike plot_v2.png
+	lyxscale 80
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fule economy labels:
+ Impact of 
+\begin_inset Formula $Var[\tau]$
+\end_inset
+
+ and 
+\begin_inset Formula $Cov[\gamma,\tau]$
+\end_inset
+
+ on welfare
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/welfare_vs_var_and_cov_panel_baddata4_id_5.png
+	lyxscale 80
+	width 5.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Measure individual-level bias
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Cars - enjoyment sliders.png
+	lyxscale 35
+	scale 27
+
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ $
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/Cars - MPL.png
+	lyxscale 35
+	scale 23
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\gamma_{i}=$
+\end_inset
+
+ valuation difference – valuation difference at true gas expenditures
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Randomize product label interventions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/FuelEconomyNPILabels.pdf
+	lyxscale 35
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+...
+ then measure effects on behavior (valuation of high-MPG cars) and welfare (reduced bias)
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Measuring direct utility effects of NPIs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Measuring direct utility effects
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Common approach:
+ avoidance design
+\end_layout
+
+\begin_layout Itemize
+Measure willingness-to-pay to avoid or receive
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Examples:
+\end_layout
+
+\begin_layout Itemize
+DellaVigna,
+ List,
+ and Malmendier (2012),
+ Trachtman et al.
+ (2015),
+ Andreoni,
+ Rao,
+ and Trachman (2017):
+ avoid being asked to donate to charity
+\end_layout
+
+\begin_layout Itemize
+Allcott and Kessler (2019):
+ avoid (or receive) Home Energy Reports
+\end_layout
+
+\begin_layout Itemize
+Butera et al.
+ (2022):
+ avoid (or receive) social recognition for exercise or charitable donation
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Potential issue:
+ Non-comparability problem (Bernheim,
+ 2016;
+ Bernheim and Taubinsky 2018)
+\end_layout
+
+\begin_layout Itemize
+E.g.,
+ if I donate out of guilt,
+ then I may not avoid the opportunity out of guilt as well,
+ so avoidance decisions do not accurately 
+\begin_inset Quotes eld
+\end_inset
+
+price out
+\begin_inset Quotes erd
+\end_inset
+
+ guilt
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Allcott and Kessler (2019):
+ Home Energy Reports
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Opower Social Comparison Module.pdf
+	lyxscale 60
+	scale 42
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Mail survey
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/Survey.pdf
+	lyxscale 50
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Willingness-to-Pay
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/WTPDistribution.pdf
+	lyxscale 80
+	scale 72
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Social welfare analysis:
+ Graphical
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/SummaryWelfare.pdf
+	scale 72
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Measuring the welfare effects of social image
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Butera,
+ Metcalfe,
+ Morrison,
+ Taubinsky (2022)
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Field experiment promoting YMCA attendance
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Online experiments on charitable giving
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status collapsed
+
+\begin_layout Plain Layout
+YMCA public recognition treatment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/ymca_pr_example.png
+	lyxscale 50
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Monetizing the public recognition frame
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+Used incentive-compatible bidding mechanism to elicit WTP for increasing or decreasing chance to be randomized into public recognition by 10%
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elicit WTP for PR for 11 different attendances intervals,
+ spanning 0-30 attendances
+\end_layout
+
+\begin_layout Itemize
+What is your WTP for PR if you attend 0 times?
+\end_layout
+
+\begin_layout Itemize
+What is your WTP for PR if you attend 1 time?
+\end_layout
+
+\begin_layout Itemize
+....
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+(Note:
+ participants given past attendance of YOTA members beforehand)
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effects on attendance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/cdf_attCoh.png
+	width 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+$
+\end_inset
+
+1.19 attendances (s.e.
+ 0.46),
+ off of a control group mean of 6.91 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Demand curves
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/demandcurves.png
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Demand curves
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/demandcurves_all.png
+	width 3.5in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+How do image payoffs vary with performance?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Figures/rf_sr_Mon_cb4.png
+	width 4in
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Takeaways
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+NPIs are popular because of colloquialisms that suggest that they are 
+\begin_inset Quotes eld
+\end_inset
+
+cheap
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+innocuous
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+But this is illusory
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+NPIs can have direct effects on utility,
+ sometimes very aversive
+\end_layout
+
+\begin_layout Enumerate
+Change consumer prices when pass-through 
+\begin_inset Formula $\rho\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+May be inefficient relative to taxation if they are not well-targeted,
+ even if ATE is 
+\begin_inset Quotes eld
+\end_inset
+
+in the right direction
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Standard tools of economics—
+careful modeling and measurement—
+can deliver answers that are very different from those suggested by a-theoretical 
+\begin_inset Quotes eld
+\end_inset
+
+behavioral science
+\begin_inset Quotes erd
+\end_inset
+
+ approaches
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Given the 100s of 
+\begin_inset Quotes eld
+\end_inset
+
+nudge
+\begin_inset Quotes erd
+\end_inset
+
+ papers studying ATEs,
+ there are tremendous opportunities for papers studying 
+\emph on
+welfare
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
