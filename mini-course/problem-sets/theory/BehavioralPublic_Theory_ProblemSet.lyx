@@ -1,0 +1,728 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Theory problem set: Optimal taxation, nudges, and tax salience 
+\end_layout
+
+\begin_layout Author
+Behavioral Public Economics Mini-Course
+\end_layout
+
+\begin_layout Section
+Subsidizing under-consumed goods
+\end_layout
+
+\begin_layout Standard
+In this question, we consider consumers who undervalue some product, 
+\begin_inset Formula $x$
+\end_inset
+
+, like healthy food or energy-efficient upgrades, because of incorrect beliefs
+ or inattention.
+ Consumers start out with some income 
+\begin_inset Formula $y$
+\end_inset
+
+, and they maximize the utility function 
+\begin_inset Formula 
+\[
+\hat{U}=\hat{\alpha}\ln(x)+(y-(p-s)x-T)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $p$
+\end_inset
+
+ is the price set by producers, 
+\begin_inset Formula $s$
+\end_inset
+
+ is the subsidy set by the government, 
+\begin_inset Formula $T$
+\end_inset
+
+ is the lump-sum tax, and 
+\begin_inset Formula $y-(p-s)x-T$
+\end_inset
+
+ is spending on the 
+\begin_inset Quotes eld
+\end_inset
+
+numeraire
+\begin_inset Quotes erd
+\end_inset
+
+ good.
+ Consumers' true utility is instead given by 
+\begin_inset Formula 
+\[
+U=\alpha\ln(x)+(y-(p-s)x-T)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha\geq\hat{\alpha}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The choice of 
+\begin_inset Formula $x$
+\end_inset
+
+ can be any non-negative real number.
+ The lump-sum tax 
+\begin_inset Formula $T$
+\end_inset
+
+ must balance the budget: if consumers choose 
+\begin_inset Formula $x^{*}(s)$
+\end_inset
+
+ given a subsidy 
+\begin_inset Formula $s$
+\end_inset
+
+, then 
+\begin_inset Formula $T(s)=s\cdot x^{*}(s)$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $y$
+\end_inset
+
+ is large enough such that the choice of 
+\begin_inset Formula $x$
+\end_inset
+
+ is always interior (i.e., it is characterized by a first-order condition).
+\end_layout
+
+\begin_layout Paragraph
+1.1
+\end_layout
+
+\begin_layout Standard
+For parts 1.1- 1.5, assume that the producer price is fixed because the good
+ is produced by a price-taking firm with constant marginal costs of production
+ (graphically, this means that the supply curve is flat).
+ Let 
+\begin_inset Formula $x^{*}(s)$
+\end_inset
+
+ be choice as a function of the subsidy.
+ Show that 
+\begin_inset Formula 
+\[
+\frac{d}{ds}\left[\alpha\ln(x)-(p-s)x^{*}(s)\right]=\frac{\alpha}{p-s}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+1.2
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $x^{*}(s)$
+\end_inset
+
+ be choice as a function of the subsidy.
+ Show that 
+\begin_inset Formula 
+\[
+\frac{d}{ds}\left[sx^{*}(s)\right]=\frac{\hat{\alpha}p}{(p-s)^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+1.3
+\end_layout
+
+\begin_layout Standard
+Using the derivations above, show that the optimal subsidy must satisfy
+ 
+\begin_inset Formula 
+\[
+\frac{p-s}{p}=\frac{\hat{\alpha}}{\alpha}.
+\]
+
+\end_inset
+
+What is the intuition behind this equation? Explain why this subsidy obtains
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+first best
+\begin_inset Quotes erd
+\end_inset
+
+—i.e., welfare that would be achieved if no consumers misoptimized.
+\end_layout
+
+\begin_layout Paragraph
+1.4
+\end_layout
+
+\begin_layout Standard
+Suppose now that a fraction 
+\begin_inset Formula $q$
+\end_inset
+
+ of consumers have 
+\begin_inset Formula $\hat{\alpha}=\hat{\alpha}_{L}<\alpha$
+\end_inset
+
+ and a fraction 
+\begin_inset Formula $1-q$
+\end_inset
+
+ of consumers have a 
+\begin_inset Formula $\hat{\alpha}=\hat{\alpha}_{H}=\alpha$
+\end_inset
+
+.
+ Using 2.1 and 2.2 above, generalize 2.3 to show that the optimal subsidy must
+ satisfy 
+\begin_inset Formula 
+\[
+\frac{p-s}{p}=q\frac{\hat{\alpha}_{L}}{\alpha}+(1-q).
+\]
+
+\end_inset
+
+Explain the intuition, and explain why this subsidy can no longer achieve
+ first-best welfare.
+ (The government must still maintain a balanced budget, meaning that the
+ lump-sum tax 
+\begin_inset Formula $T$
+\end_inset
+
+ must equal the total amount of subsidy paid out to the two types of consumers.
+ That is, 
+\begin_inset Formula $T=s\left[qx_{L}^{*}+(1-q)x_{H}^{*}\right],$
+\end_inset
+
+where 
+\begin_inset Formula $x_{L}^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{H}^{*}$
+\end_inset
+
+ are the respective consumption choices of type 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ consumers.)
+\end_layout
+
+\begin_layout Paragraph
+1.5
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Quotes eld
+\end_inset
+
+poor
+\begin_inset Quotes erd
+\end_inset
+
+ consumers have 
+\begin_inset Formula $\hat{\alpha}=\hat{\alpha}_{L}$
+\end_inset
+
+ while 
+\begin_inset Quotes eld
+\end_inset
+
+rich
+\begin_inset Quotes erd
+\end_inset
+
+ consumers have 
+\begin_inset Formula $\hat{\alpha}=\hat{\alpha}_{H}$
+\end_inset
+
+.
+ This means that rich people buy more 
+\begin_inset Formula $x$
+\end_inset
+
+ than poor people.
+ A progressive politician named Bennie Xanders gives a speech about how
+ the subsidy calculated in 2.4 above would be regressive, since it would
+ end up being distributed to the rich much more than to the poor.
+ Using your calculations in 2.4, explain why Bennie's concept of regressivity
+ is incorrect, and that in fact the subsidy benefits the rich and the poor
+ consumers equally.
+ Explain the intuition behind why standard concepts of regressivity have
+ to be refined with behavioral consumers.
+\end_layout
+
+\begin_layout Paragraph
+1.6
+\end_layout
+
+\begin_layout Standard
+For the rest of this question (1.6-1.10), assume that the supply of good 
+\begin_inset Formula $x$
+\end_inset
+
+ is fixed.
+ The firm supplying this good is still a price-taking firm.
+ (Graphically, this means that the supply curve is a vertical line.) Explain
+ why when 
+\begin_inset Formula $q=1$
+\end_inset
+
+ (all consumers are homogeneous), the first-best welfare obtains with no
+ subsidy.
+ Unless you prefer, you don't have to do any math here.
+ Hint: You may find it helpful to recall our discussion about how tax salience
+ does not affect deadweight loss of taxation with vertical supply, since
+ it does not affect equilibrium quantity sold and purchased.
+\end_layout
+
+\begin_layout Paragraph
+1.7
+\end_layout
+
+\begin_layout Standard
+Explain why, when 
+\begin_inset Formula $0<q<1$
+\end_inset
+
+, the first-best welfare no longer obtains.
+ But also explain why subsidizing (or taxing) can't improve things.
+ Hint: Think about the principles of misallocation due to heterogeneous
+ consumer bias that we discussed in the context of sales tax salience.
+ Unless you prefer, you don't have to do any math here.
+\end_layout
+
+\begin_layout Paragraph
+1.8
+\end_layout
+
+\begin_layout Standard
+Go back to the case in which 
+\begin_inset Formula $q=1$
+\end_inset
+
+.
+ Imagine a 
+\begin_inset Quotes eld
+\end_inset
+
+nudge
+\begin_inset Quotes erd
+\end_inset
+
+ that fully debiases consumers.
+ Explain why this nudge would increase profits of the price-taking firm
+ and decrease consumer surplus.
+ (Consider doing this graphically by drawing the supply and demand curves.)
+ Would the result of the nudge be different if instead the supply curve
+ was flat?
+\end_layout
+
+\begin_layout Paragraph
+1.9
+\end_layout
+
+\begin_layout Standard
+Go back to the case in which 
+\begin_inset Formula $q=1$
+\end_inset
+
+.
+ Imagine a 
+\begin_inset Quotes eld
+\end_inset
+
+nudge
+\begin_inset Quotes erd
+\end_inset
+
+ that debiases half of the consumers.
+ Explain why this nudge would lower the sum of consumer and producer surplus
+ (i.e., would lower social welfare).
+ Hint: Use 1.6 and 1.7.
+ Would the result of the nudge be different if instead the supply curve
+ was flat?
+\end_layout
+
+\begin_layout Paragraph
+1.10
+\end_layout
+
+\begin_layout Standard
+Building on 2.8 and 2.9, explain why, generally speaking, 
+\begin_inset Quotes eld
+\end_inset
+
+nudges
+\begin_inset Quotes erd
+\end_inset
+
+ are unlikely to be 
+\begin_inset Quotes eld
+\end_inset
+
+choice-preserving
+\begin_inset Quotes erd
+\end_inset
+
+ policy tools (i.e., do not affect consumers' choice-sets) in markets with
+ endogenous prices.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tax salience and welfare
+\end_layout
+
+\begin_layout Standard
+Consider a set-up similar to problem 1, where consumers have 
+\emph on
+true
+\emph default
+ utility given by 
+\begin_inset Formula $U(x)=u(x)+(y-(p+t)x)$
+\end_inset
+
+.
+ Suppose that instead of maximizing 
+\begin_inset Formula $U$
+\end_inset
+
+, consumers choose 
+\begin_inset Formula $x$
+\end_inset
+
+ to maximize 
+\begin_inset Formula $u(x)+(y-(p+\theta t)x)$
+\end_inset
+
+, where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the tax salience parameter.
+ Suppose that the government wants to maximize social welfare, given by
+ 
+\begin_inset Formula $W(t)=U(x^{*})+\lambda tx^{*}(t)$
+\end_inset
+
+, where 
+\begin_inset Formula $tx^{*}(t)$
+\end_inset
+
+ is the tax revenue and 
+\begin_inset Formula $\lambda\geq1$
+\end_inset
+
+ is the value of public funds.
+ Assume that 
+\begin_inset Formula $u(x)=ax-\frac{1}{2}x^{2}$
+\end_inset
+
+, for 
+\begin_inset Formula $a>p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+2.1
+\end_layout
+
+\begin_layout Standard
+For a consumer with salience parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+, show that the demand is given by 
+\begin_inset Formula $x^{*}(t)=\max(a-p-\theta t,0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+2.2
+\end_layout
+
+\begin_layout Standard
+Prove that for 
+\begin_inset Formula $p+\theta t<a$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{d}{dt}U(x^{*}(t))=-x^{*}+(1-\theta)\theta t=p+\theta t-a+(1-\theta)\theta t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+2.3
+\end_layout
+
+\begin_layout Standard
+Prove that the tax 
+\begin_inset Formula $t$
+\end_inset
+
+ that maximizes 
+\begin_inset Formula $W(t)$
+\end_inset
+
+ is 
+\begin_inset Formula $t=\frac{(\lambda-1)(a-p)}{2\theta(\lambda-1)+\theta^{2}}$
+\end_inset
+
+ (assuming 
+\begin_inset Formula $a>p+\theta t$
+\end_inset
+
+ at that value), and thus that the optimal tax is decreasing in 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Prove also that 
+\begin_inset Formula $\max_{t}W(t)$
+\end_inset
+
+, the maximum obtainable welfare, is decreasing in 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ What is the intuition?
+\end_layout
+
+\begin_layout Paragraph*
+2.4
+\end_layout
+
+\begin_layout Standard
+Suppose now that a fraction 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ of consumers have 
+\begin_inset Formula $\theta=\theta_{l}$
+\end_inset
+
+ and a fraction 
+\begin_inset Formula $1-\alpha$
+\end_inset
+
+ of consumers have 
+\begin_inset Formula $\theta=\theta_{h}$
+\end_inset
+
+.
+ Let social welfare be 
+\begin_inset Formula $W=\alpha U(x_{l}^{*})+(1-\alpha)U(x_{h}^{*})+\lambda[\alpha tx_{l}^{*}(t)+(1-\alpha)tx_{h}^{*}(t)]$
+\end_inset
+
+, where 
+\begin_inset Formula $x_{l}^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{h}^{*}$
+\end_inset
+
+ are the demands of type 
+\begin_inset Formula $\theta_{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta_{h}$
+\end_inset
+
+ consumers, respectively.
+ Prove that the tax 
+\begin_inset Formula $t$
+\end_inset
+
+ that maximizes 
+\begin_inset Formula $W$
+\end_inset
+
+ is 
+\begin_inset Formula $t=\frac{(\lambda-1)(a-p)}{2E[\theta](\lambda-1)+E[\theta]^{2}+Var[\theta]}$
+\end_inset
+
+, where 
+\begin_inset Formula $E[\theta]$
+\end_inset
+
+ is the average 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in the population and 
+\begin_inset Formula $Var[\theta]$
+\end_inset
+
+ is its variance.
+\end_layout
+
+\begin_layout Paragraph*
+2.5 
+\end_layout
+
+\begin_layout Standard
+Together, parts c and d show that holding constant the average value of
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in the population, the optimal tax is decreasing in the variance of 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ What is the intuition?
+\end_layout
+
+\begin_layout Paragraph*
+2.6
+\end_layout
+
+\begin_layout Standard
+Prove that even when 
+\begin_inset Formula $E[\theta]<1$
+\end_inset
+
+, welfare would be higher if both types of consumers perceived the tax correctly
+ if 
+\begin_inset Formula $\theta_{h}$
+\end_inset
+
+ is sufficiently high to make 
+\begin_inset Formula $Var[\theta]>1$
+\end_inset
+
+.
+ Draw a contrast to your answer in 2.3, and discuss the intuition.
+\end_layout
+
+\end_body
+\end_document

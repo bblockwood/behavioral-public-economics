@@ -1,0 +1,648 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Empirical problem set: Behavioral welfare analysis and estimating optimal
+ sin taxes
+\end_layout
+
+\begin_layout Author
+Behavioral Public Economics Mini-Course
+\end_layout
+
+\begin_layout Section*
+Overview
+\end_layout
+
+\begin_layout Standard
+This problem set is a replication, extension, and discussion of Allcott
+ and Taubinsky (2015), 
+\begin_inset Quotes eld
+\end_inset
+
+Evaluating Behaviorally Motivated Policy,
+\begin_inset Quotes erd
+\end_inset
+
+ hereafter 
+\begin_inset Quotes eld
+\end_inset
+
+AT.
+\begin_inset Quotes erd
+\end_inset
+
+ The paper and online appendix are available 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://sites.google.com/site/allcott/research"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For this problem set and all of your empirical work, we strongly recommend
+ that you use GitHub for version control and task management.
+ A good reference is the Gentzkow-Shapiro RA guide, available 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://github.com/gentzkow/ra-manual/wiki"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We have set up a start-up folder (including folder structure, input data,
+ and starter code) on a GitHub repository, available 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet"
+literal "false"
+
+\end_inset
+
+.
+ To use this, set up a GitHub account 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://github.com/join"
+literal "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset href
+LatexCommand href
+name "clone"
+target "https://help.github.com/en/articles/cloning-a-repository"
+literal "false"
+
+\end_inset
+
+ the 
+\begin_inset CommandInset href
+LatexCommand href
+name "problem set repository"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet"
+literal "false"
+
+\end_inset
+
+.
+ The data files necessary for the analysis are available 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/tree/master/analysis/input"
+literal "false"
+
+\end_inset
+
+.
+ You can then do the analysis beginning with the Stata 
+\begin_inset CommandInset href
+LatexCommand href
+name "starter do file"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/analysis/code/EmpiricalPSet.do"
+literal "false"
+
+\end_inset
+
+ or any other data analysis software, compile your results into the 
+\begin_inset CommandInset href
+LatexCommand href
+name "starter lyx file"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/writeup/code/BehavioralPublic_Empirical_ProblemSet_Answers.lyx"
+literal "false"
+
+\end_inset
+
+, and replace the 
+\begin_inset CommandInset href
+LatexCommand href
+name "starter results pdf "
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/writeup/output/BehavioralPublic_Empirical_ProblemSet_Answers.pdf"
+literal "false"
+
+\end_inset
+
+with your completed work.
+\end_layout
+
+\begin_layout Standard
+If you do not want to use GitHub, you can simply download the files directly
+ from the web links.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Replication and critique of AT
+\end_layout
+
+\begin_layout Paragraph
+1.1
+\end_layout
+
+\begin_layout Standard
+To make sure you understand the data, first replicate Table 1, Figure 3,
+ and Figure 4 from AT.
+ 
+\end_layout
+
+\begin_layout Paragraph
+1.2
+\end_layout
+
+\begin_layout Standard
+Review Assumption 1 on page 2524 of the published paper.
+ To what extent do you find Assumption 1 plausible in this context?
+\end_layout
+
+\begin_layout Paragraph
+1.3
+\end_layout
+
+\begin_layout Standard
+Using the results of Figure 4, what is the optimal CFL subsidy under Assumption
+ 1?
+\end_layout
+
+\begin_layout Paragraph
+1.4
+\end_layout
+
+\begin_layout Standard
+Estimate average marginal bias using the Equivalent Price Metric, as described
+ in Online Appendix B.B.
+ 
+\end_layout
+
+\begin_layout Paragraph
+1.5
+\end_layout
+
+\begin_layout Standard
+Using your results from question 1.4, what is the optimal CFL subsidy under
+ Assumption 1?
+\end_layout
+
+\begin_layout Paragraph
+1.6
+\end_layout
+
+\begin_layout Standard
+Using the discussion on page 2511, describe in your own words the assumption
+ required for the Equivalent Price Metric to equal money-metric bias.
+ Give an intuitive example of why this might fail.
+\end_layout
+
+\begin_layout Paragraph
+1.7
+\end_layout
+
+\begin_layout Standard
+Calculate the welfare effect of a ban on incandescent lightbulbs under Assumptio
+n 1, in units of $/package.
+ This should match row 1 of Table 3 from AT.
+ What are the total 
+\begin_inset Quotes eld
+\end_inset
+
+internality reduction
+\begin_inset Quotes erd
+\end_inset
+
+ gain and the total 
+\begin_inset Quotes eld
+\end_inset
+
+Harberger distortion
+\begin_inset Quotes erd
+\end_inset
+
+ loss (as illustrated in Figure 6 from AT), in units of $/package?
+\end_layout
+
+\begin_layout Paragraph
+1.8
+\end_layout
+
+\begin_layout Standard
+What additional considerations would you take into account before using
+ these results to advise policy makers?
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Externalities, external validity, change in the product space from CFLs
+ toward LEDs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comparing demand responses
+\end_layout
+
+\begin_layout Standard
+In addition to a debiasing intervention as carried out by AT, another approach
+ to measuring bias from inattention or imperfect information is what we
+ have called 
+\begin_inset Quotes eld
+\end_inset
+
+comparing demand responses.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Imagine that consumer type 
+\begin_inset Formula $\theta$
+\end_inset
+
+'s normative valuation for the CFL relative to the incandescent lightbulb
+ is 
+\begin_inset Formula 
+\begin{equation}
+V_{\theta}=v_{\theta}-p+e,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $v$
+\end_inset
+
+ reflects heterogeneous preferences for the non-price characteristics of
+ the two bulbs, 
+\begin_inset Formula $p$
+\end_inset
+
+ is the relative price of the CFL, and 
+\begin_inset Formula $e$
+\end_inset
+
+ is the present discounted value of the lifetime relative electricity savings
+ from the CFL.
+ More precisely, if the average lightbulb will be used 1000 hours per year
+ over four years (a rough approximation), the annual discount factor is
+ 
+\begin_inset Formula $\delta=0.95$
+\end_inset
+
+, 
+\begin_inset Formula $p_{e}$
+\end_inset
+
+ is the marginal electricity price in dollars per kilowatt-hour (kWh), 
+\begin_inset Formula $w$
+\end_inset
+
+ is electricity use (
+\begin_inset Formula $w_{inc}=$
+\end_inset
+
+ 0.06 kWh per hour and 
+\begin_inset Formula $w_{CFL}=0.015$
+\end_inset
+
+ kWh per hour), and we assume zero discounting, then 
+\begin_inset Formula 
+\begin{equation}
+e=e(p_{e})=\sum_{t=1}^{4}\delta^{t}\cdot1000\cdot p_{e}\cdot(w_{inc}-w_{CFL})\label{eq:e}
+\end{equation}
+
+\end_inset
+
+ dollars.
+\end_layout
+
+\begin_layout Standard
+If consumers do not pay full attention to the electricity savings 
+\begin_inset Formula $e$
+\end_inset
+
+, then type 
+\begin_inset Formula $\theta$
+\end_inset
+
+'s actual valuation would be
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U=v-p+(1-\tilde{\gamma}_{\theta})e,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{\gamma}_{\theta}$
+\end_inset
+
+ reflects the share of 
+\begin_inset Formula $e$
+\end_inset
+
+ that is misperceived.
+ In the standard model, 
+\begin_inset Formula $\tilde{\gamma}_{\theta}=0$
+\end_inset
+
+.
+ If electricity prices are not fully salient or consumers underestimate
+ the electricity savings 
+\begin_inset Formula $(w_{inc}-w_{CFL})$
+\end_inset
+
+, then 
+\begin_inset Formula $\tilde{\gamma}_{\theta}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Electricity prices 
+\begin_inset Formula $p_{e}$
+\end_inset
+
+ vary across utilities and states.
+ A testable hypothesis of 
+\begin_inset Formula $\tilde{\gamma}_{\theta}=0$
+\end_inset
+
+ is that their valuations will reflect this cross-sectional variation.
+ Let's test this hypothesis.
+\end_layout
+
+\begin_layout Paragraph*
+2.1
+\end_layout
+
+\begin_layout Standard
+The file 
+\begin_inset CommandInset href
+LatexCommand href
+name "MarginalElectricityPrice.dta"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/analysis/input/MarginalElectricityPrice.dta"
+literal "false"
+
+\end_inset
+
+ contains average marginal residential electricity prices by state for 2014.
+ (The original data on marginal price are at the utility level, from Borenstein
+ and Bushnell (2019).
+ We collapsed this to the state level, weighting by each utility's number
+ of customers, so this is the average of marginal prices across utilities.)
+ Add an additional variable to MarginalElectricityPrice.dta that contains
+ the CFL lifetime electricity savings 
+\begin_inset Formula $e$
+\end_inset
+
+ from Equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:e"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Report the unweighted average across states.
+\end_layout
+
+\begin_layout Paragraph*
+2.2
+\end_layout
+
+\begin_layout Standard
+Merge the 
+\begin_inset Formula $e$
+\end_inset
+
+ variable into the 
+\begin_inset CommandInset href
+LatexCommand href
+name "AT TESS microdata"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/analysis/input/PreppedTESSData.dta"
+literal "false"
+
+\end_inset
+
+.
+ Construct a scatterplot with one observation per state, showing the average
+ of baseline relative CFL valuation (the WTP1 variable) on the y-axis and
+ the average of relative CFL savings (your new 
+\begin_inset Formula $e$
+\end_inset
+
+ variable) on the x-axis.
+ Plot a best fit line, weighting each state by the number of observations
+ in that state.
+ What is the slope of this best-fit line?
+\end_layout
+
+\begin_layout Paragraph*
+2.3
+\end_layout
+
+\begin_layout Standard
+Construct a regression table that presents the results of an regression
+ of WTP1 on 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Cluster your standard errors by state.
+ The slope should be the same as the best-fit line from question 2.2.
+\end_layout
+
+\begin_layout Paragraph*
+2.4
+\end_layout
+
+\begin_layout Standard
+What are the assumptions required for this regression to be an unbiased
+ estimator of 
+\begin_inset Formula $\tilde{\gamma}$
+\end_inset
+
+? (Hint: there are two.
+ The first is discussed on page 2512 of AT.
+ The second is that 
+\begin_inset Formula $v$
+\end_inset
+
+ is exogenous.)
+\end_layout
+
+\begin_layout Paragraph*
+2.5 
+\end_layout
+
+\begin_layout Standard
+Can you think of any reasons why 
+\begin_inset Formula $v$
+\end_inset
+
+ might not be exogenous? Put differently, are there any reasons why preferences
+ for CFLs might be correlated with electricity prices? 
+\end_layout
+
+\begin_layout Paragraph*
+2.6
+\end_layout
+
+\begin_layout Standard
+Look in the 
+\begin_inset CommandInset href
+LatexCommand href
+name "AT TESS microdata"
+target "https://github.com/huntallcott/BehavioralPublicProblemSet/blob/master/analysis/input/PreppedTESSData.dta"
+literal "false"
+
+\end_inset
+
+ for variables that might help control for confounding factors you discussed
+ in question 2.5.
+ Add another column to your regression table that includes these control
+ variables.
+ How much does this change the results?
+\end_layout
+
+\begin_layout Paragraph*
+2.7
+\end_layout
+
+\begin_layout Standard
+Calculate the average marginal bias (in units of dollars) based on your
+ regression estimate of 
+\begin_inset Formula $\tilde{\gamma}$
+\end_inset
+
+.
+ (The estimated average marginal bias should be 
+\begin_inset Formula $\hat{\gamma}=\hat{\tilde{\gamma}}e$
+\end_inset
+
+.) Compare and contrast this estimate to the estimates from the informational
+ intervention in AT's Figure 4.
+ What might explain any differences?
+\end_layout
+
+\end_body
+\end_document
